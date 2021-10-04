@@ -1,0 +1,63 @@
+.concept {
+  background-color: #eeeeee;
+  padding-bottom: 80px;
+  border-top: 1px solid #c0c0c0;
+  border-bottom: 1px solid #c0c0c0;
+  margin-top: 70px;
+
+  .concept-wrap {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .title {
+    font-family: "Righteous";
+    font-size: 30px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .concept-list {
+    display: flex;
+    //align-content: flex-start;
+    align-items: flex-start;
+    background: rgba(0, 0, 0, 0);
+  }
+  .concept-item {
+    width: 33.3%;
+    max-width: 33.3%;
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: center;
+
+    .image {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 92px;
+        height: 90px;
+        max-width: 100%;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+      }
+    }
+  }
+  .text {
+  }
+  .con-title {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 15px;
+    @include overTab {
+      font-size: 28px;
+    }
+  }
+  .mes {
+    font-family: "Roboto";
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    @include overTab {
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.flow {
+  margin-top: 40px;
+  margin-bottom: 70px;
+  background-color: #eeeeee;
+  border-bottom: 1px solid #c0c0c0;
+  border-top: 1px solid #c0c0c0;
+  .title {
+    font-family: "Righteous";
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 40px;
+    font-weight: bold;
+    text-shadow: 0 0.01em 0 #999, 0 0.02em 0 #888, 0 0.03em 0 #777,
+      0 0.04em 0 #666, 0 0.05em 0 #555, 0 0.06em 0 #444, 0 0.08em 0 #000;
+  }
+  p {
+    text-align: center;
+  }
+  .flow-wrap {
+    margin-left: 10px;
+    margin-right: 10px;
+    @include overTab {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+  .flow-list {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .flow-item {
+    width: 20%;
+    max-width: 20%;
+    h3 {
+      text-align: center;
+    }
+    .sub {
+      font-size: 12px;
+      padding-top: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      @include overTab {
+        padding-left: 15px;
+      }
+    }
+    > p {
+      padding-top: 20px;
+      font-size: 10px;
+      @include overTab {
+      }
+    }
+    &:nth-child(n + 2) {
+      @include overTab {
+        margin-left: 25px;
+      }
+    }
+  }
+}

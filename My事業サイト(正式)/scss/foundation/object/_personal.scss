@@ -1,0 +1,65 @@
+.personal {
+  margin-top: 40px;
+  background-color: #eeeeee;
+  border-top: 1px solid #c0c0c0;
+  border-bottom: 1px solid #c0c0c0;
+  .personal-title {
+    font-family: "Noto Sans JP", sans-serif;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    > p {
+      font-size: 12px;
+      padding-top: 20px;
+    }
+  }
+
+  .personal-wrap {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 40px;
+    @include overTab {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .main-image {
+    img {
+      width: 300px;
+    }
+    transform: translateX(20%);
+    @include overTab {
+      transform: translateX(0%);
+    }
+  }
+
+  .image {
+    margin-left: 40px;
+    img {
+      width: 120px;
+    }
+    transform: translateX(10%);
+    @include overTab {
+      transform: translateX(0%);
+    }
+  }
+
+  img:hover {
+    box-shadow: 0 5px 10px black;
+    transform: scale(1.5, 1.5);
+    opacity: 0.9;
+    color: white;
+  }
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+  transform: translateY(30px);
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
